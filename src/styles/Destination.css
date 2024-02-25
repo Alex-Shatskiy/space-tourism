@@ -1,0 +1,103 @@
+.destination-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.destination-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.destination-info h5 {
+  font-size: 25px;
+}
+
+.destination-info img {
+  width: 50%;
+}
+
+.selection-container {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+.selection-container p {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.selection-container p:hover {
+  border-color: #ffffff;
+  border-bottom: solid;
+}
+
+.moon-info {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  align-items: center;
+}
+.moon-info h1 {
+  font-size: 90px;
+  margin: 0;
+}
+
+.moon-info p {
+  font-size: 23px;
+  text-align: center;
+  color: var(--textColorSecondary);
+}
+
+.destination-distance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+.destination-distance div {
+  width: 100%;
+  text-align: center;
+}
+.travel h3 {
+  font-size: 24px;
+}
+.travel h2 {
+  font-size: 40px;
+}
+
+.destination-container hr {
+  display: inline;
+  position: relative;
+  border-color: #fffcfc4d;
+  width: 84%;
+  bottom: 47%;
+}
+
+@media only screen and (min-width: 768px) {
+  .selection-container {
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top: 3.5%;
+  }
+  .selection-container p {
+    font-size: 30px;
+  }
+  .destination-distance {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .destination-container {
+    flex-direction: row;
+  }
+  .destination-info {
+    width: 50%;
+  }
+  .destination-info img {
+    width: 20%;
+  }
+}

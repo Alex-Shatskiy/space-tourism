@@ -1,0 +1,109 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+}
+
+nav {
+  background-color: var(--navbarColor);
+  backdrop-filter: blur(20px);
+}
+nav a {
+  margin: 0 2rem;
+  height: 5%;
+  color: var(--textColorPrimary);
+  text-decoration: none;
+  text-align: center;
+  line-height: 5rem;
+}
+nav a:hover {
+  border-color: #ffffff;
+  border-bottom: solid;
+}
+
+header .nav-button {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColorPrimary);
+  display: none;
+  opacity: 0;
+}
+
+hr {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  header .nav-button {
+    display: inline;
+    opacity: 1;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateX(100vw);
+  }
+
+  header .nav-close-button {
+    position: absolute;
+    top: 2%;
+    right: 9%;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    padding-right: 0;
+  }
+  .logo {
+    padding-left: 2rem;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+  }
+  nav a {
+    height: 100%;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header {
+    padding-top: 2%;
+  }
+  hr {
+    width: 30%;
+    left: 13%;
+  }
+  nav a {
+    width: 10%;
+  }
+  header hr {
+    display: inline;
+    height: 0px;
+    position: absolute;
+    border-color: #fffcfc4d;
+    z-index: 99;
+    width: 28%;
+    left: 16%;
+  }
+}
