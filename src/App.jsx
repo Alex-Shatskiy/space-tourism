@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Route, Routes } from "react-router-dom"
 
-import data from "./assets/data.json"
+import data from "../public/assets/data.json"
 
 import Crew from "./main-components/Crew/Crew.jsx"
 import Destination from "./main-components/Destination/Destination.jsx"
