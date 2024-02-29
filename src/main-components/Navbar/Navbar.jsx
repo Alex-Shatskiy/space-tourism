@@ -34,11 +34,11 @@ function Navbar({ setBackgrounImage }) {
             Technology
           </Link>
           <button className="nav-button nav-close-button" onClick={showNavBar}>
-            <img src="../../src/assets/shared/icon-close.svg" />
+            <img src="./assets/shared/icon-close.svg" />
           </button>
         </nav>
         <button id="close-button" className="nav-button" onClick={showNavBar}>
-          <img src="../../src/assets/shared/icon-hamburger.svg" />
+          <img src="./assets/shared/icon-hamburger.svg" />
         </button>
       </header>
     </>
