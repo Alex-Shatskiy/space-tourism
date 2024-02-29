@@ -57,21 +57,25 @@ function Destination({ destinations }) {
   return (
     <div className="destination-container">
       <div className="destination-info">
-        <h5 className="barlow-condensed"> PICK YOUR DESTINATION</h5>
-        <img
-          alt={destination.name}
-          src={displayMoonImage(destinations, destination)}
-        />
-        <div className="selection-container">
-          {displayMoonSelection(destinations, destination)}
+        <div className="destination-image-title">
+          <h5 className="barlow-condensed"> PICK YOUR DESTINATION</h5>
+          <img
+            alt={destination.name}
+            src={displayMoonImage(destinations, destination)}
+          />
         </div>
-        <div className="moon-info">
-          {displayMoonData(destinations, destination)}
+        <div className="destination-rest-info">
+          <div className="selection-container">
+            {displayMoonSelection(destinations, destination)}
+          </div>
+          <div className="moon-info">
+            {displayMoonData(destinations, destination)}
+          </div>
+          <hr />
+          <div className="destination-distance">
+            {displayMoonDistance(destinations, destination)}
+          </div>
         </div>
-      </div>
-      <hr />
-      <div className="destination-distance">
-        {displayMoonDistance(destinations, destination)}
       </div>
     </div>
   )
