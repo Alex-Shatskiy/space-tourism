@@ -20,7 +20,7 @@ function Navbar({ setBackgrounImage }) {
           <img
             className="logo"
             alt="logo"
-            src="../../src/assets/shared/logo.svg"
+            src="../../public/assets/shared/logo.svg"
           />
         </Link>
         <hr />

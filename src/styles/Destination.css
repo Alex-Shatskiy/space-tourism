@@ -114,7 +114,7 @@
     justify-content: space-around;
   }
   .destination-info {
-    height: 90%;
+    height: 100%;
   }
   .destination-info .destination-image-title h5 {
     font-size: 40px;
