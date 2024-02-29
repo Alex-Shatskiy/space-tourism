@@ -17,11 +17,7 @@ function Navbar({ setBackgrounImage }) {
     <>
       <header>
         <Link onClick={() => setBackgrounImage("home")} to="/">
-          <img
-            className="logo"
-            alt="logo"
-            src="../../public/assets/shared/logo.svg"
-          />
+          <img className="logo" alt="logo" src="./assets/shared/logo.svg" />
         </Link>
         <hr />
         <nav ref={navRef}>
