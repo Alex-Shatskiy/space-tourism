@@ -17,11 +17,7 @@ function Navbar({ setBackgrounImage }) {
     <>
       <header>
         <Link onClick={() => setBackgrounImage("home")} to="/space-tourism">
-          <img
-            className="logo"
-            alt="logo"
-            src="./space-tourism/assets/shared/logo.svg"
-          />
+          <img className="logo" alt="logo" src="./assets/shared/logo.svg" />
         </Link>
         <hr />
         <nav ref={navRef}>
@@ -44,11 +40,11 @@ function Navbar({ setBackgrounImage }) {
             Technology
           </Link>
           <button className="nav-button nav-close-button" onClick={showNavBar}>
-            <img src="./space-tourism/assets/shared/icon-close.svg" />
+            <img src="./assets/shared/icon-close.svg" />
           </button>
         </nav>
         <button id="close-button" className="nav-button" onClick={showNavBar}>
-          <img src="./space-tourism/assets/shared/icon-hamburger.svg" />
+          <img src="./assets/shared/icon-hamburger.svg" />
         </button>
       </header>
     </>
