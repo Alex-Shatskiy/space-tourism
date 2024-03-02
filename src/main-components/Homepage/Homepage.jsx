@@ -1,13 +1,6 @@
-import { useEffect } from "react"
 import "../../styles/Homepage.css"
 
 function Homepage() {
-  useEffect(() => {
-    document.body.style.overflow = "hidden"
-    return () => {
-      document.body.style.overflow = "scroll"
-    }
-  }, [])
   return (
     <div className="homepage-container">
       <div className="hompage-content">

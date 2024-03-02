@@ -16,29 +16,39 @@ function Navbar({ setBackgrounImage }) {
   return (
     <>
       <header>
-        <Link onClick={() => setBackgrounImage("home")} to="/">
-          <img className="logo" alt="logo" src="./assets/shared/logo.svg" />
+        <Link onClick={() => setBackgrounImage("home")} to="/space-tourism">
+          <img
+            className="logo"
+            alt="logo"
+            src="./space-tourism/assets/shared/logo.svg"
+          />
         </Link>
         <hr />
         <nav ref={navRef}>
-          <Link onClick={() => handleOnClick("home")} to="/">
+          <Link onClick={() => handleOnClick("home")} to="/space-tourism">
             Home
           </Link>
-          <Link onClick={() => handleOnClick("destination")} to="/destination">
+          <Link
+            onClick={() => handleOnClick("destination")}
+            to="/space-tourism/destination"
+          >
             Destination
           </Link>
-          <Link onClick={() => handleOnClick("crew")} to="/crew">
+          <Link onClick={() => handleOnClick("crew")} to="/space-tourism/crew">
             Crew
           </Link>
-          <Link onClick={() => handleOnClick("technology")} to="/technology">
+          <Link
+            onClick={() => handleOnClick("technology")}
+            to="/space-tourism/technology"
+          >
             Technology
           </Link>
           <button className="nav-button nav-close-button" onClick={showNavBar}>
-            <img src="./assets/shared/icon-close.svg" />
+            <img src="./space-tourism/assets/shared/icon-close.svg" />
           </button>
         </nav>
         <button id="close-button" className="nav-button" onClick={showNavBar}>
-          <img src="./assets/shared/icon-hamburger.svg" />
+          <img src="./space-tourism/assets/shared/icon-hamburger.svg" />
         </button>
       </header>
     </>

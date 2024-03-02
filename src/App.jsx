@@ -19,13 +19,13 @@ function App() {
     <main className={`main-container ${backgroundImage}`}>
       <Navbar setBackgrounImage={setBackgrounImage} />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/space-tourism/" element={<Homepage />} />
         <Route
-          path="/destination"
+          path="/space-tourism/destination"
           element={<Destination destinations={data.destinations} />}
         />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
+        <Route path="/space-tourism/crew" element={<Crew />} />
+        <Route path="/space-tourism/technology" element={<Technology />} />
       </Routes>
     </main>
   )
